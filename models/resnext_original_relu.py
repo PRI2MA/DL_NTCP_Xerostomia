@@ -137,7 +137,6 @@ class ResNeXt(nn.Module):
                 self.clinical_variables_layers.add_module('relu%s' % i, self.relu)
         else:
             clinical_variables_linear_units = [n_features]
-        #####
 
         # Initialize linear layers
         self.linear_layers = torch.nn.ModuleList()

@@ -177,14 +177,12 @@ perform_pooling = False  # Whether to perform (Avg)Pooling or not. If pooling_co
 # (Avg)Pooling will not be applied.
 linear_units = [16]
 dropout_p = [0]  # Should have the same length as `linear_units`
-# NEW
 clinical_variables_position = 0  # (Only if len(features_dl) > 0.) -1 | 0 | 1 | 2 | ... The position is in line with
 # `clinical_variables_linear_units`, e.g., 0 means that the clinical variables MLP will be added to the first linear
 # layer of `clinical_variables_linear_units`. Note: -1 means that the clinical variables MLP will be added to the layer
 # before the first linear layer, which for most models is the flatten layer.
 clinical_variables_linear_units = None  # (Only if len(features_dl) > 0.) None | list of ints
 clinical_variables_dropout_p = [0]  # Should have the same length as `clinical_variables_linear_units`
-#####
 use_bias = True
 num_classes = 2  # Model outputs size. IMPORTANT: define `label_weights` such that len(label_weights) == num_classes.
 num_ohe_classes = 2  # Size of One-Hot Encoding output.
