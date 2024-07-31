@@ -299,4 +299,4 @@ rtdose_colorbar_title = 'cGy'
 segmentation_colorbar_title = ''
 
 # Run whole data_preproc pipeline for a small number of patients, useful for testing
-test_patients_list = None  # ['0276627']
+test_patients_list = None  
