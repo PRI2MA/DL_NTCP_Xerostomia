@@ -536,7 +536,7 @@ def main_match_ct_rtdose_rtstruct():
         issues_patient_ids = sort_human(list(set(wrong_patient_id_ct_list + wrong_patient_id_rtdose_list + wrong_patient_id_rtstruct_list +
                                                  no_frame_of_ref_uid_match_rtdose_list + no_frame_of_ref_uid_match_rtstruct_list)))
 
-        # issues_patient_ids = ['1910821180', '3514675268', '9878102359']
+        
         for patient_id in issues_patient_ids:
             # Determine folder type of interest ('with_contrast'/'no_contrast')
             # TODO: temporary, for MDACC
