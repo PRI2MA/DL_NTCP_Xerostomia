@@ -291,10 +291,7 @@ def main():
             test_patients_list = cfg.test_patients_list
             patients_list = [x for x in test_patients_list if x in patients_list]
 
-        # patients_list = ['2172459', '2611076', '3327503', '3573430', '3817188', '4333313', '4550588', '4572671',
-        #                  '4607934', '4623503', '4623503', '4649219', '4661059', '4684570', '4712719', '4714826',
-        #                  '4723603', '4839613', '4900718', '5890297', '6493823', '6574780', '7790833', '8154097',
-        #                  '9113574']
+
         for patient_id in tqdm(patients_list):
             logger.my_print('Patient_id: {}'.format(patient_id))
 
